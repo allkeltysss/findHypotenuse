@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гидрыпоюзать</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Нахождение гипотенузы по двум катетам</h1>
+    <form name="numbers" onsubmit="event.preventDefault(); findHypotenuse();">
+        <input type="number" name="first" required>
+        <input type="number" name="second" required>
+        <input type="submit" value="Отправить">
+    </form>
+    <div class="flexContainer">
+        <button onclick="random()">Рандом</button>
+        <p id="addition">При нажатиии на копку "рандом" берётся 2 любых числа от 1 до 1000, при которых значение гипотенузы будет целым числом, а не корнем.</p>
+    </div>
+    <h2 id="answer">Ответ:</h2>
+    <script src="script.js"></script>
+</body>
+</html>
